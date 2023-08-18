@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="loadAnimation.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="responsiv.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="type-style.css">
+    <link rel="icon" type="image/x-icon" href="/img/pokeball (1).png">
+    <title>Pokedex</title>
+</head>
+<body onload="loadPokemon()">
+    <header>
+        <img src="img/pokeball2.png" alt="">
+        <a style="text-decoration: none; color: white;" href="index.html">
+        <h1>Pokedex</h1>
+            </a>
+        <div class="main-container">
+            <div id="searchContainer">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search for a Pokémon..."
+                  oninput="searchPokemon()"/>
+              </div>              
+    </header>
+     
+    <div class="pokedex-container" id="pokedex">
+    
+    </div>
+    <div id="loadMoreButton">
+        <button id="load-more-button" onclick="loadMorePokemon()">Load More</button>
+        <div style="display: none;" class="wrapper">
+            <div class="pokeball">
+        </div>
+    </div>
+    
+<div id="modal" class="modal"></div>
+</body>
+</html>

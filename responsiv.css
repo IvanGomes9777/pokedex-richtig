@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+    header {
+      gap: 0px;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    header img{
+      margin-top: 10px;
+    }
+  
+    .main-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #searchInput {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .navigation {
+      gap: 250px;
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .pokemon {
+      width: 70%;
+      height: auto;
+    }
+  
+    .evolution-stage {
+      margin: 10px 0;
+    }
+  }
