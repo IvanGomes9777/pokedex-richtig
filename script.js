@@ -20,7 +20,7 @@ async function loadPokemon() {
   for (let i = 0; i < newPokemon.length; i++) {
     let pokemonResponse = responses[i];
     let pokemonData = await pokemonResponse.json();
-    newPokemon[i] = {
+      newPokemon[i] = {
       id: pokemonData.id,
       name: capitalizeFirstLetter(pokemonData.name),
       imageUrl: pokemonData.sprites.other["official-artwork"].front_default,
